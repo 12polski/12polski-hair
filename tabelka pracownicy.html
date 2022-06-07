@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Szablon</title>
+
+    <link href="styl_uklad.css" rel="stylesheet" />
+    <style>
+        table {
+            border-spacing: 0px;
+            /*border-collapse:collapse;*/
+            border: 1px solid #000000;
+            margin: auto;
+        }
+
+        thead tr th {
+            font-family: 'Times New Roman', Times, serif;
+            border: 1px solid #000000;
+            padding: 5px;
+            color: #000000;
+            border-collapse: collapse;
+        }
+
+        tbody tr td {
+            font-family: Arial;
+            border: 1px solid #000000;
+            padding: 5px;
+            color: #000000;
+        }
+
+        .praca {
+            background-color: #000000;
+            color: #000000;
+        }
+
+        .wolne {
+            background-color: #000000;
+            color: #000000;
+        }
+    </style>
+    <link href="menu.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css family=Righteous&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="kalkulator.css" />
+</head>
+<body>
+    <header><center><h1> <br /> Salon Fryzjerski 12 POLSKI  <span>&#9986;</span></h1></center> </header>
+    <nav>
+        <center><h2 style="color:black; background-color:grey"> Menu </h2></center>
+        <ul>
+            <li><a href="index.html"> Strona głowna </a> </li>
+            <li><a href="https://styl.fm/fryzury" target="_blank"> Katalog fryzur </a> </li>
+            <li><a href="artykul.html"> Najnowsze trendy 2022 </a> </li>
+            <li><a href="tabelka pracownicy.html"> Cennik </a> </li>
+            <li><a href="formularz.html"> Formularz </a> </li>
+            <li><a href="Strzyżenia męskie.html"> Strzyżenia męskie </a> </li>
+            <li><a href="Strzyżenia damskie.html"> Strzyżenia damskie </a> </li>
+            <li><a href="Pielęgnacje.html"> Pielęgnacje </a> </li>
+            <li><a href="Botoks.html"> Botoks </a> </li>
+            <li><a href="Godziny otwarcia.html"> Godziny otwarcia </a> </li>
+            <li><a href="Kontakt.html"> Kontakt </a> </li>
+            <li><a href="Nasze prace.html"> Nasze prace </a> </li>
+            <li><a href="Canvas1.html"> Rysowanie loga firmy </a> </li>
+
+
+        </ul>
+
+    </nav>
+    <article>
+        <center><h1>Cennik</h1></center>
+
+        <table>
+            <!-- border="1" -> nie stosować! - stosować CSS -->
+            <thead>
+                <tr>
+                    <th rowspan="2">Lp.</th>
+                    <th rowspan=2>Usługa</th>
+                    <th rowspan="2">Czas trwania</th>
+                    <th rowspan="2">Cena</th>
+                    <th rowspan="2">Pracownik</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Strzyżenie męskie</td>
+                    <td>0,5h</td>
+                    <td>50zł</td>
+                    <td>Monika</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Strzyżenie damskie</td>
+                    <td>1h</td>
+                    <td>100zł</td>
+                    <td>Oliwia</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Strzyżenie dziecięce</td>
+                    <td>0,5h</td>
+                    <td>25zł</td>
+                    <td>Oliwia</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Strzyżenie brody</td>
+                    <td>1h</td>
+                    <td>64zł</td>
+                    <td>Jola</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Koloryzacja - włosy długie</td>
+                    <td>3h</td>
+                    <td>350zł</td>
+                    <td>Agnieszka</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Koloryzacja - włosy średnie</td>
+                    <td>2,5h</td>
+                    <td>300zł</td>
+                    <td>Agnieszka</td>
+                <tr>
+                    <td>7.</td>
+                    <td>Koloryzacja - włosy krótkie</td>
+                    <td>2h</td>
+                    <td>250zł</td>
+                    <td>Agnieszka</td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>Pielęgnacje</td>
+                    <td>1,5h</td>
+                    <td>50zł-150zł</td>
+                    <td>Monika, Agnieszka, Oliwia</td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>Botoks</td>
+                    <td>3h</td>
+                    <td>290zł</td>
+                    <td>Paula</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br /><br /><br /><br />
+        <h1><center>Oblicz rabat dla siebie!</center></h1>
+        <form>
+            Czas potrzebny na wykonanie twojej usługi [max. 3h]: <input type="text"
+                                id="firstNumber" /><br>
+            Kolor włosów (2 - blond, 1 - inny kolor): <input type="text"
+                               id="secondNumber" /><br>
+            Wiek (1 - powyżej 60 roku życia, 2 - poniżej 60 roku życia): <input type="text"
+                               id="thirdNumber" /><br>
+            Ilość wcześniejszych wizyt: <input type="text"
+                               id="fourthNumber" /><br>
+            <input type="button" onClick="multiplyBy()"
+                   Value="Oblicz cenę" /><br>
+        </form>
+
+        <p><center>
+    Rabat na kolejną usługę wynosi: <br>
+    <span id="result"></span>
+    %
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <i>
+              <span style="font-size: x-small">
+                  Rabaty nie łączą się z innymi promocjami.
+                  <p>
+                      Zasady promocji są następujące: Rabat naliczamy do 8 wizyt, a 9 jest gratis.
+                      Po skorzystaniu z naszych usług 9 razy, rabat można naliczać od nowa).
+                  </p>
+              </span>
+              
+          </i>
+</center>
+        </p>
+
+
+        <script>
+            function multiplyBy() {
+                num1 = document.getElementById(
+                    "firstNumber").value;
+                num2 = document.getElementById(
+                    "secondNumber").value;
+                num3 = document.getElementById(
+                    "thirdNumber").value;
+                num4 = document.getElementById(
+                    "fourthNumber").value;
+                document.getElementById(
+                    "result").innerHTML = num1 * num2 * num3 * num4;
+            }
+        </script>
+        
+        <center>
+            <h3><b>Powrót do strony głównej</b></h3>
+
+            <img src="home.png" width="35" height="35" alt="" title="" usemap="#mapa" />
+            <map name="mapa" id="mapa">
+                <area shape="rect" coords="1, 1, 101, 30" href="index.html" alt="Strona główna" title="Strona główna" />
+                <area shape="rect" coords="1, 48, 101, 77" href="index.html" alt="Strona główna" title="Strona główna" />
+            </map>
+
+        </center>
+    </article>
+    <aside> <iframe src="kontrolkiJS.html"></iframe>  </aside>
+    <footer>
+        autor strony:<br />
+        imię i nazwisko: Konrad Grabowski<br />
+        numer albumu: 149379<br />
+        adres email: konrad.grabowski@student.put.poznan.pl <br />
+        grupa: L1<br />
+
+
+
+
+    </footer>
+
+
+</body>
+</html>

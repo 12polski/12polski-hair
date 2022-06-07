@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Formularz</title>
+
+    <style>
+        h1, h2 {
+            color: black;
+            text-align: center;
+        }
+        /*h2{
+            text-align:center;
+        }*/
+    </style>
+    <link href="styl_uklad.css" type="text/css" rel="stylesheet" />
+    <link href="formularz.css" rel="stylesheet" />
+    <link href="menu.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header><h1> <br /> Salon Fryzjerski 12 POLSKI  <span>&#9986;</span></h1> </header>
+    <nav>
+        <h2 style="color:black; background-color:grey"> Menu </h2>
+        <ul>
+            <li><a href="index.html"> Strona głowna </a> </li>
+            <li><a href="https://styl.fm/fryzury" target="_blank"> Katalog fryzur </a> </li>
+            <li><a href="artykul.html"> Najnowsze trendy 2022 </a> </li>
+            <li><a href="tabelka pracownicy.html"> Cennik </a> </li>
+            <li><a href="formularz.html"> Formularz </a> </li>
+            <li><a href="Strzyżenia męskie.html"> Strzyżenia męskie </a> </li>
+            <li><a href="Strzyżenia damskie.html"> Strzyżenia damskie </a> </li>
+            <li><a href="Pielęgnacje.html"> Pielęgnacje </a> </li>
+            <li><a href="Botoks.html"> Botoks </a> </li>
+            <li><a href="Godziny otwarcia.html"> Godziny otwarcia </a> </li>
+            <li><a href="Kontakt.html"> Kontakt </a> </li>
+            <li><a href="Nasze prace.html"> Nasze prace </a> </li>
+            <li><a href="Canvas1.html"> Rysowanie loga firmy </a> </li>
+
+
+        </ul>
+
+    </nav>
+    <article>
+        <h2>Formularz danych osobowych klienta</h2>
+        <form action="mailto:konrad.grabowski@student.put.poznan.pl"
+              method="post">
+
+            <p>
+                Prosze wypełnić ten formularz aby dodać się do bazy klientów<br />
+                Obowiązkowe pola oznaczono znakiem <em>*</em>
+            </p>
+            <fieldset>
+                <legend>Dane kontaktowe</legend>
+                <label for="imie"> Imię<em>*</em>: </label>
+                <input type="text" name="imie" id="imie" autofocus
+                       placeholder="podaj swoje imię" required /> <br />
+
+                <label for="nazwisko"> Nazwisko<em>*</em>: </label>
+                <input type="text" name="nazwisko" id="nazwisko" autofocus
+                       placeholder="podaj swoje nazwisko" required /><br />
+
+                <label for="telefon">Nr telefonu<em>*</em>: </label>
+                <input type="tel" name="telefon" id="telefon"
+                       placeholder="(+48) xxx-xxx-xxx" required /><br />
+
+                <label for="mail"> E-mail: </label>
+                <input type="email" name="mail" id="mail" required /> <br />
+            </fieldset>
+            <fieldset>
+                <legend>Długość włosów</legend>
+                <label>
+                    <input type="checkbox" name="Długie" id="Długie" />Długie
+                </label><br />
+                <label>
+                    <input type="checkbox" name="Średnie" id="Średnie" />Średnie
+                </label><br />
+                <label>
+                    <input type="checkbox" name="Krótkie" id="Krótkie" />Krótkie
+                </label><br />
+                <label>
+                    <input type="checkbox" name="Łysina" id="Łysina" />Łysina
+                </label><br />
+            </fieldset>
+            <fieldset>
+                <legend>Szczegółowe</legend>
+
+                <label for="Ulubiony stylista"> Ulubiony fryzjer </label>
+                <input type="text" name="Ulubiony stylista" id="Ulubiony stylista" autofocus
+                       required /> <br />
+
+                <label for="Kolor włosów"> Kolor włosów: </label>
+                <input type="text" name="Ulica" id="Ulica" autofocus
+                       required /> <br />
+
+                <label for="nr"> Wiek: </label>
+                <input type="number" name="nr" id="nr" autofocus
+                       required /> <br />
+                <label for="data"> Preferowana data najbliższej wizyty:: </label>
+                <input type="date" name="data" id="data" /><br />
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Dane do statystyk</legend>
+                <label for="wiek"> Od ilu lat korzystasz z naszych usług ?  </label><br />
+                <input type="radio" id="wiek" name="wiek" /> <1 <br />
+               <input type="radio" id="wiek" name="wiek" checked /> 1-3 <br />
+               <input type="radio" id="wiek" name="wiek" /> 3-8 <br />
+               <input type="radio" id="wiek" name="wiek" /> 8-15 <br />
+               <input type="radio" id="wiek" name="wiek" /> od początku do dnia dzisiejszego <br />
+               <label for="płeć"> Płeć: </label><br />
+               <select id="płeć" name="płeć">
+                   <option value="kobieta"> Kobieta </option>
+                   <option value="mężczyzna"> Mężczyzna </option>
+               </select>
+               <br />
+               <label for="opinia"> Opinia: </label><br />
+               <textarea cols="65" rows="10">  </textarea>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Wyślij formularz" />
+                <input type="reset" value="Kasuj formularz" />
+            </p>
+        </form>
+
+    </article>
+    <aside> <iframe src="kontrolkiJS.html"></iframe>  </aside>
+    <footer>
+        autor strony:<br />
+        imię i nazwisko: Konrad Grabowski<br />
+        numer albumu: 149379<br />
+        adres email: konrad.grabowski@student.put.poznan.pl <br />
+        grupa: L1<br />
+
+
+
+
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿
+form{
+    width:500px;
+    margin: 20px auto;
+}
+
+label{
+    width:150px;
+    display:inline-block;
+    background-color:gray;
+    color:black;
+    font-size:20px;
+    font-family:Cambria;
+    padding:4px;
+    border:1px solid grey;
+}
+
+input {
+    margin: 4px;
+    font-size: 20px;
+    font-family: Cambria;
+}
+input:focus{
+    background-color:yellow;
+}
+em{
+    color:darkred;
+    font-weight:bolder;
+}
+
+fieldset{
+    padding:15px;
+    border-radius:10px;
+    border:2px dotted #ffffff;
+}
+
+legend{
+    font: bold 20px Arial;
+}
